@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sorting_Modul/Sorting_Modul.iml" filepath="$PROJECT_DIR$/Sorting_Modul/Sorting_Modul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SumWithRecursive/SumWithRecursive.iml" filepath="$PROJECT_DIR$/SumWithRecursive/SumWithRecursive.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/implementingDSA-withJava.iml" filepath="$PROJECT_DIR$/.idea/implementingDSA-withJava.iml" />
     </modules>
   </component>
