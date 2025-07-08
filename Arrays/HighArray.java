@@ -7,6 +7,11 @@ public class HighArray {
     nElm = 0;
   }
 
+  public void insert(int elm){
+    arr[nElm] = elm;
+    nElm ++;
+  }
+
   public boolean find(int target){
     int j ;
     for(j = 0; j < nElm ; j++){
@@ -16,10 +21,24 @@ public class HighArray {
     else return true;
   }
 
-  public void insert(int elm){
-    arr[nElm] = elm;
-    nElm ++;
+  // find method with binary search
+  // so we suppose that the array is already sorted
+  public boolean findBin(int target){
+    int lowIndex = 0;
+    int highIndex = nElm - 1 ;
+    while(highIndex > lowIndex){
+      int mid = lowIndex + (highIndex - lowIndex)/2 ;
+      if(target == arr[mid]) return true;
+      else if(target > arr[mid]){
+        lowIndex = mid + 1;
+      }else{
+        highIndex = mid;
+      }
+    }
+    return false;
   }
+
+
 
   public boolean delete(int elm){
     int j;
