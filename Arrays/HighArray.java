@@ -50,7 +50,7 @@ public class HighArray {
       for(int k = j; k < nElm - 1 ; k++){
         arr[k] = arr[k+1];
       }
-      nElm --;
+      nElm --; // reduce the size of the array by one
       return true;
     }
   }
@@ -61,5 +61,23 @@ public class HighArray {
       System.out.print(arr[j] + "  ");
     }
     System.out.println(" ");
+  }
+
+  public int size(){
+    return nElm;
+  }
+
+  public int getMax(){
+    if(nElm == 0) return -1;
+    else {
+      int j = 0;
+      int max = arr[0];
+      for(j =0; j < nElm ;j++){
+        if(arr[j] > max){
+          max = arr[j];
+        }
+      }
+      return max;
+    }
   }
 }
