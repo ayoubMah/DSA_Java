@@ -45,7 +45,7 @@ public class HighArray {
     for(j = 0; j < nElm; j++){
       if(elm == arr[j]) break;
     }
-    if(arr[j] == nElm) return false;
+    if(j == nElm) return false;
     else {
       for(int k = j; k < nElm - 1 ; k++){
         arr[k] = arr[k+1];
